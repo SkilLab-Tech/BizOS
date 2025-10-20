@@ -1,0 +1,38 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "subject",
+    "starts_on",
+    "ends_on",
+    "match_suggestion",
+    "event",
+    "participants",
+    "notes"
+  ],
+  "fields": [
+    {"fieldname": "subject", "fieldtype": "Data", "label": "Subject", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "starts_on", "fieldtype": "Datetime", "label": "Starts On"},
+    {"fieldname": "ends_on", "fieldtype": "Datetime", "label": "Ends On"},
+    {"fieldname": "match_suggestion", "fieldtype": "Link", "label": "Match Suggestion", "options": "Match Suggestion"},
+    {"fieldname": "event", "fieldtype": "Link", "label": "Event", "options": "Event"},
+    {"fieldname": "participants", "fieldtype": "Table", "label": "Participants", "options": "Event Participants"},
+    {"fieldname": "notes", "fieldtype": "Text", "label": "Notes"}
+  ],
+  "autoname": "format: MEET-.#####",
+  "icon": "fa fa-calendar-check-o",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Meeting",
+  "owner": "Administrator",
+  "permissions": [
+    {"create": 1, "email": 1, "print": 1, "read": 1, "report": 1, "role": "All", "share": 1, "write": 1, "if_owner": 1},
+    {"create": 1, "delete": 1, "email": 1, "export": 1, "import": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

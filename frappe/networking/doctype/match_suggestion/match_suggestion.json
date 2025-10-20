@@ -1,0 +1,47 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "community",
+    "match_run",
+    "status",
+    "score",
+    "member_profile_a",
+    "member_profile_b",
+    "member_profile_a_user",
+    "member_profile_b_user",
+    "member_profile_a_name",
+    "member_profile_b_name",
+    "event",
+    "message"
+  ],
+  "fields": [
+    {"fieldname": "community", "fieldtype": "Link", "label": "Community", "options": "Community", "in_standard_filter": 1},
+    {"fieldname": "match_run", "fieldtype": "Link", "label": "Match Run", "options": "Match Run"},
+    {"default": "Suggested", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Suggested\nProposed\nAccepted\nDeclined\nScheduled\nCompleted", "in_list_view": 1, "in_standard_filter": 1},
+    {"fieldname": "score", "fieldtype": "Float", "label": "Score", "precision": "2", "in_list_view": 1},
+    {"fieldname": "member_profile_a", "fieldtype": "Link", "label": "Member A", "options": "Member Profile", "reqd": 1},
+    {"fieldname": "member_profile_b", "fieldtype": "Link", "label": "Member B", "options": "Member Profile", "reqd": 1},
+    {"fieldname": "member_profile_a_user", "fieldtype": "Link", "label": "User A", "options": "User"},
+    {"fieldname": "member_profile_b_user", "fieldtype": "Link", "label": "User B", "options": "User"},
+    {"fieldname": "member_profile_a_name", "fieldtype": "Data", "label": "Name A"},
+    {"fieldname": "member_profile_b_name", "fieldtype": "Data", "label": "Name B"},
+    {"fieldname": "event", "fieldtype": "Link", "label": "Event", "options": "Event"},
+    {"fieldname": "message", "fieldtype": "Small Text", "label": "Message"}
+  ],
+  "icon": "fa fa-handshake-o",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Match Suggestion",
+  "owner": "Administrator",
+  "permissions": [
+    {"read": 1, "role": "All"},
+    {"create": 1, "delete": 1, "email": 1, "export": 1, "import": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

@@ -1,0 +1,7 @@
+{
+  "actions": [],
+  "doctype": "Module Def",
+  "module_name": "Networking",
+  "app_name": "frappe",
+  "restrict_to_domain": null
+}

@@ -1,0 +1,35 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "interest_name",
+    "category",
+    "synonyms",
+    "description",
+    "is_active"
+  ],
+  "fields": [
+    {"fieldname": "interest_name", "fieldtype": "Data", "label": "Interest Name", "reqd": 1, "in_global_search": 1, "in_list_view": 1, "unique": 1},
+    {"fieldname": "category", "fieldtype": "Data", "label": "Category", "in_standard_filter": 1},
+    {"fieldname": "synonyms", "fieldtype": "Small Text", "label": "Synonyms"},
+    {"fieldname": "description", "fieldtype": "Text", "label": "Description"},
+    {"default": "1", "fieldname": "is_active", "fieldtype": "Check", "label": "Is Active"}
+  ],
+  "icon": "fa fa-tags",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Interest",
+  "owner": "Administrator",
+  "permissions": [
+    {"read": 1, "role": "All"},
+    {"create": 1, "delete": 1, "email": 1, "export": 1, "import": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "show_title_field_in_link": 1,
+  "title_field": "interest_name",
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

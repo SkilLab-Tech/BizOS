@@ -1,0 +1,43 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "community_name",
+    "description",
+    "owner_user",
+    "domain_focus",
+    "timezone",
+    "allow_auto_matching",
+    "match_frequency",
+    "matching_day_of_week",
+    "matching_time_local"
+  ],
+  "fields": [
+    {"fieldname": "community_name", "fieldtype": "Data", "label": "Community Name", "reqd": 1, "in_list_view": 1, "in_global_search": 1},
+    {"fieldname": "description", "fieldtype": "Text Editor", "label": "Description"},
+    {"fieldname": "owner_user", "fieldtype": "Link", "label": "Owner", "options": "User"},
+    {"fieldname": "domain_focus", "fieldtype": "Data", "label": "Domain Focus"},
+    {"fieldname": "timezone", "fieldtype": "Data", "label": "Timezone"},
+    {"default": "1", "fieldname": "allow_auto_matching", "fieldtype": "Check", "label": "Allow Auto Matching"},
+    {"default": "Weekly", "fieldname": "match_frequency", "fieldtype": "Select", "label": "Match Frequency", "options": "Weekly\nBiweekly\nMonthly"},
+    {"fieldname": "matching_day_of_week", "fieldtype": "Select", "label": "Matching Day of Week", "options": "Monday\nTuesday\nWednesday\nThursday\nFriday"},
+    {"fieldname": "matching_time_local", "fieldtype": "Time", "label": "Matching Time (Local)"}
+  ],
+  "icon": "fa fa-users",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Community",
+  "owner": "Administrator",
+  "permissions": [
+    {"read": 1, "role": "All"},
+    {"create": 1, "delete": 1, "email": 1, "export": 1, "import": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "show_title_field_in_link": 1,
+  "title_field": "community_name",
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
