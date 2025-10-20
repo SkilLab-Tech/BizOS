@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "creation": "2025-10-20 12:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "matched_member",
+  "matched_member_name",
+  "match_score",
+  "match_reason",
+  "connection_sent"
+ ],
+ "fields": [
+  {
+   "fieldname": "matched_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Matched Member",
+   "options": "Member Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "matched_member.full_name",
+   "fieldname": "matched_member_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "match_score",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Match Score (%)"
+  },
+  {
+   "fieldname": "match_reason",
+   "fieldtype": "Small Text",
+   "label": "Match Reason"
+  },
+  {
+   "default": "0",
+   "fieldname": "connection_sent",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Connection Sent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-20 12:00:00",
+ "modified_by": "Administrator",
+ "module": "Networking",
+ "name": "Matchmaking Result",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

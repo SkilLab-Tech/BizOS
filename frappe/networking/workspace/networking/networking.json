@@ -1,0 +1,205 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Networking Activity",
+   "label": "Networking Activity"
+  }
+ ],
+ "creation": "2025-10-20 12:00:00",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends": "",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Networking",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Management",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Profile",
+   "link_count": 0,
+   "link_to": "Member Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Interest",
+   "link_count": 0,
+   "link_to": "Interest",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Skill",
+   "link_count": 0,
+   "link_to": "Skill",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Connections & Networking",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Networking Connection",
+   "link_count": 0,
+   "link_to": "Networking Connection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Networking Meeting",
+   "link_count": 0,
+   "link_to": "Networking Meeting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Matchmaking Request",
+   "link_count": 0,
+   "link_to": "Matchmaking Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Organizations",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Networking Organization",
+   "link_count": 0,
+   "link_to": "Networking Organization",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alumni Group",
+   "link_count": 0,
+   "link_to": "Alumni Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Connections Report",
+   "link_count": 0,
+   "link_to": "Member Connections Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Networking Activity Report",
+   "link_count": 0,
+   "link_to": "Networking Activity Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-10-20 12:00:00",
+ "modified_by": "Administrator",
+ "module": "Networking",
+ "name": "Networking",
+ "onboarding": "",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "format": "{} Active",
+   "label": "Member Profile",
+   "link_to": "Member Profile",
+   "stats_filter": "{\"status\": \"Active\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "format": "{} Accepted",
+   "label": "Networking Connection",
+   "link_to": "Networking Connection",
+   "stats_filter": "{\"status\": \"Accepted\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Upcoming",
+   "label": "Networking Meeting",
+   "link_to": "Networking Meeting",
+   "stats_filter": "{\"status\": [\"in\", [\"Scheduled\", \"Confirmed\"]]}",
+   "type": "DocType"
+  },
+  {
+   "label": "Find Matches",
+   "link_to": "/app/matchmaking-request/new",
+   "type": "Link"
+  }
+ ]
+}

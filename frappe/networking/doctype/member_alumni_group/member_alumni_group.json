@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "creation": "2025-10-20 12:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "alumni_group",
+  "join_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "alumni_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Alumni Group",
+   "options": "Alumni Group",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Join Date"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-20 12:00:00",
+ "modified_by": "Administrator",
+ "module": "Networking",
+ "name": "Member Alumni Group",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

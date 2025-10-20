@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "autoname": "format:MATCH-{#####}",
+ "creation": "2025-10-20 12:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_info_section",
+  "member",
+  "member_name",
+  "request_date",
+  "status",
+  "column_break_request",
+  "matching_criteria",
+  "max_matches",
+  "min_match_score",
+  "preferred_connection_type",
+  "results_section",
+  "total_matches_found",
+  "processed_date",
+  "matches",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_info_section",
+   "fieldtype": "Section Break",
+   "label": "Request Information"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Request Date"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nProcessing\nCompleted\nFailed"
+  },
+  {
+   "fieldname": "column_break_request",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "matching_criteria",
+   "fieldtype": "Small Text",
+   "label": "Additional Matching Criteria"
+  },
+  {
+   "default": "10",
+   "fieldname": "max_matches",
+   "fieldtype": "Int",
+   "label": "Maximum Matches"
+  },
+  {
+   "default": "70",
+   "fieldname": "min_match_score",
+   "fieldtype": "Int",
+   "label": "Minimum Match Score (%)"
+  },
+  {
+   "fieldname": "preferred_connection_type",
+   "fieldtype": "Select",
+   "label": "Preferred Connection Type",
+   "options": "\nNetworking\nMentorship\nCollaboration\nRecruiting\nAlumni\nPartnership"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "results_section",
+   "fieldtype": "Section Break",
+   "label": "Results"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_matches_found",
+   "fieldtype": "Int",
+   "label": "Total Matches Found",
+   "read_only": 1
+  },
+  {
+   "fieldname": "processed_date",
+   "fieldtype": "Datetime",
+   "label": "Processed Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "matches",
+   "fieldtype": "Table",
+   "label": "Matched Members",
+   "options": "Matchmaking Result"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-20 12:00:00",
+ "modified_by": "Administrator",
+ "module": "Networking",
+ "name": "Matchmaking Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "autoname": "format:CONN-{#####}",
+ "creation": "2025-10-20 12:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "connection_info_section",
+  "from_member",
+  "from_member_name",
+  "to_member",
+  "to_member_name",
+  "column_break_connection",
+  "status",
+  "connection_type",
+  "created_date",
+  "accepted_date",
+  "details_section",
+  "connection_note",
+  "tags",
+  "interaction_section",
+  "last_interaction_date",
+  "interaction_count",
+  "meeting_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "connection_info_section",
+   "fieldtype": "Section Break",
+   "label": "Connection Information"
+  },
+  {
+   "fieldname": "from_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From Member",
+   "options": "Member Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "from_member.full_name",
+   "fieldname": "from_member_name",
+   "fieldtype": "Data",
+   "label": "From Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To Member",
+   "options": "Member Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "to_member.full_name",
+   "fieldname": "to_member_name",
+   "fieldtype": "Data",
+   "label": "To Member Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_connection",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Pending\nAccepted\nRejected\nBlocked"
+  },
+  {
+   "fieldname": "connection_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Connection Type",
+   "options": "Networking\nMentorship\nCollaboration\nRecruiting\nAlumni\nPartnership"
+  },
+  {
+   "default": "Today",
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "accepted_date",
+   "fieldtype": "Date",
+   "label": "Accepted Date",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "connection_note",
+   "fieldtype": "Text",
+   "label": "Connection Note"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Small Text",
+   "label": "Tags"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "interaction_section",
+   "fieldtype": "Section Break",
+   "label": "Interaction History"
+  },
+  {
+   "fieldname": "last_interaction_date",
+   "fieldtype": "Datetime",
+   "label": "Last Interaction Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "interaction_count",
+   "fieldtype": "Int",
+   "label": "Interaction Count",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "meeting_count",
+   "fieldtype": "Int",
+   "label": "Meeting Count",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-20 12:00:00",
+ "modified_by": "Administrator",
+ "module": "Networking",
+ "name": "Networking Connection",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "All",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
