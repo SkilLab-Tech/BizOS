@@ -1,0 +1,35 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "community",
+    "status",
+    "started_on",
+    "completed_on",
+    "pair_count",
+    "notes"
+  ],
+  "fields": [
+    {"fieldname": "community", "fieldtype": "Link", "label": "Community", "options": "Community", "reqd": 1, "in_standard_filter": 1},
+    {"default": "Queued", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Queued\nRunning\nCompleted\nFailed", "in_list_view": 1, "in_standard_filter": 1},
+    {"fieldname": "started_on", "fieldtype": "Datetime", "label": "Started On", "read_only": 1},
+    {"fieldname": "completed_on", "fieldtype": "Datetime", "label": "Completed On", "read_only": 1},
+    {"fieldname": "pair_count", "fieldtype": "Int", "label": "Pair Count", "read_only": 1},
+    {"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+  ],
+  "icon": "fa fa-random",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Match Run",
+  "owner": "Administrator",
+  "permissions": [
+    {"read": 1, "role": "All"},
+    {"create": 1, "delete": 1, "email": 1, "export": 1, "import": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}

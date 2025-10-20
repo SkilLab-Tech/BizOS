@@ -210,6 +210,7 @@ scheduler_events = {
 			"frappe.model.utils.link_count.update_link_count",
 			"frappe.search.sqlite_search.build_index_if_not_exists",
 			"frappe.pulse.client.send_queued_events",
+			"frappe.networking.scheduler.run_scheduled_matches",
 		],
 		# 10 minutes
 		"0/10 * * * *": [
@@ -393,6 +394,14 @@ override_whitelisted_methods = {
 	"frappe.www.login.login_via_salesforce": "frappe.integrations.oauth2_logins.login_via_salesforce",
 	"frappe.www.login.login_via_fairlogin": "frappe.integrations.oauth2_logins.login_via_fairlogin",
 }
+
+# Networking public APIs
+override_whitelisted_methods.update({
+    "frappe.networking.search_profiles": "frappe.networking.api.search_profiles",
+    "frappe.networking.run_matchmaking": "frappe.networking.api.run_matchmaking",
+    "frappe.networking.accept_match": "frappe.networking.api.accept_match",
+    "frappe.networking.create_event_from_suggestion": "frappe.networking.api.create_event_from_suggestion",
+})
 
 ignore_links_on_delete = [
 	"Communication",

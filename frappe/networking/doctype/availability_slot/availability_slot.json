@@ -1,0 +1,34 @@
+{
+  "actions": [],
+  "doctype": "DocType",
+  "istable": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "weekday",
+    "date",
+    "start_time",
+    "end_time",
+    "timezone",
+    "is_recurring",
+    "note"
+  ],
+  "fields": [
+    {"fieldname": "weekday", "fieldtype": "Select", "label": "Weekday", "options": "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday"},
+    {"fieldname": "date", "fieldtype": "Date", "label": "Date"},
+    {"fieldname": "start_time", "fieldtype": "Time", "label": "Start Time", "reqd": 1},
+    {"fieldname": "end_time", "fieldtype": "Time", "label": "End Time", "reqd": 1},
+    {"fieldname": "timezone", "fieldtype": "Data", "label": "Timezone"},
+    {"default": "1", "fieldname": "is_recurring", "fieldtype": "Check", "label": "Is Recurring"},
+    {"fieldname": "note", "fieldtype": "Data", "label": "Note"}
+  ],
+  "icon": "fa fa-clock-o",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Availability Slot",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "creation",
+  "sort_order": "DESC"
+}

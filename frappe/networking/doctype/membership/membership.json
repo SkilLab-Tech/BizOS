@@ -1,0 +1,39 @@
+{
+  "actions": [],
+  "allow_import": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "user",
+    "community",
+    "member_profile",
+    "status",
+    "role",
+    "joined_on",
+    "left_on",
+    "verified"
+  ],
+  "fields": [
+    {"fieldname": "user", "fieldtype": "Link", "label": "User", "options": "User", "reqd": 1, "in_standard_filter": 1},
+    {"fieldname": "community", "fieldtype": "Link", "label": "Community", "options": "Community", "reqd": 1, "in_standard_filter": 1},
+    {"fieldname": "member_profile", "fieldtype": "Link", "label": "Member Profile", "options": "Member Profile"},
+    {"default": "Active", "fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Active\nInvited\nLeft"},
+    {"fieldname": "role", "fieldtype": "Select", "label": "Role", "options": "Member\nAlumni\nStaff\nMentor\nMentee"},
+    {"fieldname": "joined_on", "fieldtype": "Date", "label": "Joined On"},
+    {"fieldname": "left_on", "fieldtype": "Date", "label": "Left On"},
+    {"default": "0", "fieldname": "verified", "fieldtype": "Check", "label": "Verified"}
+  ],
+  "icon": "fa fa-address-card",
+  "idx": 1,
+  "links": [],
+  "modified_by": "Administrator",
+  "module": "Networking",
+  "name": "Membership",
+  "owner": "Administrator",
+  "permissions": [
+    {"create": 1, "email": 1, "print": 1, "read": 1, "report": 1, "role": "All", "share": 1, "write": 1, "if_owner": 1},
+    {"create": 1, "delete": 1, "email": 1, "export": 1, "import": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1}
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
