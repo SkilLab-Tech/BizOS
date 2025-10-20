@@ -1,0 +1,364 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Master",
+ "engine": "InnoDB",
+ "field_order": [
+  "organization_section",
+  "organization_name",
+  "organization_type",
+  "website",
+  "email",
+  "phone",
+  "logo",
+  "description",
+  "cb_00",
+  "address",
+  "city",
+  "state",
+  "country",
+  "postal_code",
+  "sb_01",
+  "organization_details",
+  "industry",
+  "organization_size",
+  "founded_year",
+  "mission_statement",
+  "cb_01",
+  "contact_person",
+  "contact_email",
+  "contact_phone",
+  "sb_02",
+  "social_media",
+  "linkedin_profile",
+  "twitter_profile",
+  "facebook_profile",
+  "instagram_profile",
+  "cb_02",
+  "verification",
+  "is_verified",
+  "verification_date",
+  "verification_documents",
+  "sb_03",
+  "settings",
+  "allow_member_registration",
+  "require_approval",
+  "public_profile",
+  "sb_04",
+  "statistics",
+  "total_members",
+  "active_members",
+  "total_projects",
+  "total_events"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization_section",
+   "fieldtype": "Section Break",
+   "label": "Organization Information",
+   "options": "fa fa-building"
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Organization Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "organization_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Organization Type",
+   "options": "Nonprofit\nFor-Profit\nGovernment\nEducational Institution\nCommunity Organization\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State/Province"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Organization Details",
+   "options": "fa fa-info-circle"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry"
+  },
+  {
+   "fieldname": "organization_size",
+   "fieldtype": "Select",
+   "label": "Organization Size",
+   "options": "1-10\n11-50\n51-200\n201-500\n501-1000\n1000+"
+  },
+  {
+   "fieldname": "founded_year",
+   "fieldtype": "Int",
+   "label": "Founded Year"
+  },
+  {
+   "fieldname": "mission_statement",
+   "fieldtype": "Text",
+   "label": "Mission Statement"
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "contact_phone",
+   "fieldtype": "Data",
+   "label": "Contact Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "sb_02",
+   "fieldtype": "Section Break",
+   "label": "Social Media",
+   "options": "fa fa-share-alt"
+  },
+  {
+   "fieldname": "linkedin_profile",
+   "fieldtype": "Data",
+   "label": "LinkedIn Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "twitter_profile",
+   "fieldtype": "Data",
+   "label": "Twitter Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "facebook_profile",
+   "fieldtype": "Data",
+   "label": "Facebook Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "instagram_profile",
+   "fieldtype": "Data",
+   "label": "Instagram Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "cb_02",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verification",
+   "fieldtype": "Section Break",
+   "label": "Verification",
+   "options": "fa fa-check-circle"
+  },
+  {
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Is Verified"
+  },
+  {
+   "fieldname": "verification_date",
+   "fieldtype": "Date",
+   "label": "Verification Date"
+  },
+  {
+   "fieldname": "verification_documents",
+   "fieldtype": "Attach",
+   "label": "Verification Documents"
+  },
+  {
+   "fieldname": "sb_03",
+   "fieldtype": "Section Break",
+   "label": "Settings",
+   "options": "fa fa-cog"
+  },
+  {
+   "fieldname": "allow_member_registration",
+   "fieldtype": "Check",
+   "label": "Allow Member Registration"
+  },
+  {
+   "fieldname": "require_approval",
+   "fieldtype": "Check",
+   "label": "Require Approval for New Members"
+  },
+  {
+   "fieldname": "public_profile",
+   "fieldtype": "Check",
+   "label": "Public Profile",
+   "default": 1
+  },
+  {
+   "fieldname": "sb_04",
+   "fieldtype": "Section Break",
+   "label": "Statistics",
+   "options": "fa fa-chart-bar"
+  },
+  {
+   "fieldname": "total_members",
+   "fieldtype": "Int",
+   "label": "Total Members",
+   "read_only": 1
+  },
+  {
+   "fieldname": "active_members",
+   "fieldtype": "Int",
+   "label": "Active Members",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_projects",
+   "fieldtype": "Int",
+   "label": "Total Projects",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_events",
+   "fieldtype": "Int",
+   "label": "Total Events",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-building",
+ "idx": 1,
+ "image_field": "logo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Organization",
+ "name_case": "Title Case",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "organization_name"
+}

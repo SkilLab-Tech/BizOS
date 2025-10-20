@@ -1,0 +1,51 @@
+{
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Child",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill",
+  "proficiency_level",
+  "years_experience",
+  "is_primary"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Skill",
+   "options": "Skill",
+   "reqd": 1
+  },
+  {
+   "fieldname": "proficiency_level",
+   "fieldtype": "Select",
+   "label": "Proficiency Level",
+   "options": "Beginner\nIntermediate\nAdvanced\nExpert",
+   "reqd": 1
+  },
+  {
+   "fieldname": "years_experience",
+   "fieldtype": "Int",
+   "label": "Years of Experience"
+  },
+  {
+   "fieldname": "is_primary",
+   "fieldtype": "Check",
+   "label": "Primary Skill"
+  }
+ ],
+ "idx": 1,
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Profile Skill",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "skill",
+ "sort_order": "ASC",
+ "states": []
+}
