@@ -1,0 +1,33 @@
+{
+ "doctype": "DocType",
+ "name": "Match",
+ "module": "Networking",
+ "autoname": "autoincrement",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_a",
+  "member_b",
+  "score",
+  "explanation",
+  "status",
+  "meeting",
+  "created_by_job"
+ ],
+ "fields": [
+  {"fieldname": "member_a", "fieldtype": "Link", "options": "Member Profile", "label": "Member A", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "member_b", "fieldtype": "Link", "options": "Member Profile", "label": "Member B", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "score", "fieldtype": "Float", "label": "Score", "precision": "3", "in_list_view": 1},
+  {"fieldname": "explanation", "fieldtype": "Small Text", "label": "Explanation"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Proposed\nAccepted\nRejected\nScheduled\nCompleted", "default": "Proposed", "in_list_view": 1, "in_standard_filter": 1},
+  {"fieldname": "meeting", "fieldtype": "Link", "options": "Meeting", "label": "Meeting"},
+  {"fieldname": "created_by_job", "fieldtype": "Check", "label": "Created by Job", "default": "1", "read_only": 1}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "email": 1, "print": 1, "report": 1, "share": 1},
+  {"role": "All", "read": 1, "write": 1, "create": 1}
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

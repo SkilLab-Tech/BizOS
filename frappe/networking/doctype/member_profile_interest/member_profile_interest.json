@@ -1,0 +1,11 @@
+{
+ "doctype": "DocType",
+ "name": "Member Profile Interest",
+ "module": "Networking",
+ "istable": 1,
+ "editable_grid": 1,
+ "fields": [
+  {"fieldname": "interest", "fieldtype": "Data", "label": "Interest", "in_list_view": 1, "reqd": 1}
+ ],
+ "permissions": []
+}

@@ -1,0 +1,65 @@
+{
+ "doctype": "DocType",
+ "name": "Member Profile",
+ "module": "Networking",
+ "autoname": "field:full_name",
+ "document_type": "Document",
+ "allow_import": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_basic",
+  "user",
+  "full_name",
+  "headline",
+  "organization",
+  "title",
+  "location",
+  "bio",
+  "image",
+  "section_roles",
+  "can_mentor",
+  "wants_mentor",
+  "is_hiring",
+  "open_to_work",
+  "accepts_intros",
+  "enabled",
+  "section_interests",
+  "interests",
+  "section_skills",
+  "skills"
+ ],
+ "fields": [
+  {"fieldname": "section_basic", "fieldtype": "Section Break", "label": "Basic Info"},
+  {"fieldname": "user", "fieldtype": "Link", "options": "User", "label": "User", "in_list_view": 1},
+  {"fieldname": "full_name", "fieldtype": "Data", "label": "Full Name", "reqd": 1, "in_list_view": 1, "in_global_search": 1},
+  {"fieldname": "headline", "fieldtype": "Data", "label": "Headline", "in_global_search": 1},
+  {"fieldname": "organization", "fieldtype": "Data", "label": "Organization", "in_global_search": 1},
+  {"fieldname": "title", "fieldtype": "Data", "label": "Title"},
+  {"fieldname": "location", "fieldtype": "Data", "label": "Location", "in_global_search": 1},
+  {"fieldname": "bio", "fieldtype": "Text Editor", "label": "Bio"},
+  {"fieldname": "image", "fieldtype": "Attach Image", "label": "Image"},
+
+  {"fieldname": "section_roles", "fieldtype": "Section Break", "label": "Roles & Intent"},
+  {"fieldname": "can_mentor", "fieldtype": "Check", "label": "Can Mentor"},
+  {"fieldname": "wants_mentor", "fieldtype": "Check", "label": "Wants Mentor"},
+  {"fieldname": "is_hiring", "fieldtype": "Check", "label": "Is Hiring"},
+  {"fieldname": "open_to_work", "fieldtype": "Check", "label": "Open to Work"},
+  {"fieldname": "accepts_intros", "fieldtype": "Check", "label": "Accepts Introductions", "default": "1"},
+  {"fieldname": "enabled", "fieldtype": "Check", "label": "Enabled", "default": "1"},
+
+  {"fieldname": "section_interests", "fieldtype": "Section Break", "label": "Interests"},
+  {"fieldname": "interests", "fieldtype": "Table", "label": "Interests", "options": "Member Profile Interest"},
+
+  {"fieldname": "section_skills", "fieldtype": "Section Break", "label": "Skills"},
+  {"fieldname": "skills", "fieldtype": "Table", "label": "Skills", "options": "Member Profile Skill"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "email": 1, "print": 1, "report": 1, "share": 1},
+  {"role": "All", "read": 1, "write": 1, "create": 1, "share": 1}
+ ],
+ "istable": 0,
+ "quick_entry": 1,
+ "title_field": "full_name",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

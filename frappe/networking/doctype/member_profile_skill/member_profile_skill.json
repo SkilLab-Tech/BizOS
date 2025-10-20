@@ -1,0 +1,11 @@
+{
+ "doctype": "DocType",
+ "name": "Member Profile Skill",
+ "module": "Networking",
+ "istable": 1,
+ "editable_grid": 1,
+ "fields": [
+  {"fieldname": "skill", "fieldtype": "Data", "label": "Skill", "in_list_view": 1, "reqd": 1}
+ ],
+ "permissions": []
+}
