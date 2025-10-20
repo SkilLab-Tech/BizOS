@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "autoname": "format:MEET-{#####}",
+ "creation": "2025-10-20 12:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_info_section",
+  "title",
+  "connection",
+  "participant_1",
+  "participant_1_name",
+  "participant_2",
+  "participant_2_name",
+  "column_break_meeting",
+  "meeting_date",
+  "meeting_time",
+  "duration_minutes",
+  "meeting_mode",
+  "status",
+  "details_section",
+  "meeting_location",
+  "meeting_link",
+  "agenda",
+  "notes_section",
+  "notes",
+  "outcome",
+  "follow_up_required",
+  "follow_up_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_info_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Information"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "connection",
+   "fieldtype": "Link",
+   "label": "Connection",
+   "options": "Networking Connection"
+  },
+  {
+   "fieldname": "participant_1",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Participant 1",
+   "options": "Member Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "participant_1.full_name",
+   "fieldname": "participant_1_name",
+   "fieldtype": "Data",
+   "label": "Participant 1 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "participant_2",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Participant 2",
+   "options": "Member Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "participant_2.full_name",
+   "fieldname": "participant_2_name",
+   "fieldtype": "Data",
+   "label": "Participant 2 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_meeting",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Meeting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_time",
+   "fieldtype": "Time",
+   "label": "Meeting Time"
+  },
+  {
+   "default": "30",
+   "fieldname": "duration_minutes",
+   "fieldtype": "Int",
+   "label": "Duration (minutes)"
+  },
+  {
+   "default": "Virtual",
+   "fieldname": "meeting_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Meeting Mode",
+   "options": "Virtual\nIn-Person\nPhone"
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Scheduled\nConfirmed\nCompleted\nCancelled\nRescheduled"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Details"
+  },
+  {
+   "depends_on": "eval:doc.meeting_mode=='In-Person'",
+   "fieldname": "meeting_location",
+   "fieldtype": "Small Text",
+   "label": "Meeting Location"
+  },
+  {
+   "depends_on": "eval:doc.meeting_mode=='Virtual'",
+   "fieldname": "meeting_link",
+   "fieldtype": "Data",
+   "label": "Meeting Link",
+   "options": "URL"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Text",
+   "label": "Agenda"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes & Outcome"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Meeting Notes"
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Select",
+   "label": "Outcome",
+   "options": "\nSuccessful\nNeeds Follow-up\nNo Show\nCancelled"
+  },
+  {
+   "default": "0",
+   "fieldname": "follow_up_required",
+   "fieldtype": "Check",
+   "label": "Follow-up Required"
+  },
+  {
+   "depends_on": "follow_up_required",
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow-up Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-10-20 12:00:00",
+ "modified_by": "Administrator",
+ "module": "Networking",
+ "name": "Networking Meeting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
