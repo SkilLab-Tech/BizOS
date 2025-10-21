@@ -1,0 +1,29 @@
+{
+ "doctype": "DocType",
+ "name": "Matching Preference",
+ "module": "Networking",
+ "autoname": "field:member_profile",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_profile",
+  "interest_weight",
+  "skill_weight",
+  "role_weight",
+  "max_matches_per_round",
+  "min_score_threshold"
+ ],
+ "fields": [
+  {"fieldname": "member_profile", "fieldtype": "Link", "options": "Member Profile", "label": "Member Profile", "reqd": 1},
+  {"fieldname": "interest_weight", "fieldtype": "Float", "label": "Interest Weight", "default": "0.5"},
+  {"fieldname": "skill_weight", "fieldtype": "Float", "label": "Skill Weight", "default": "0.3"},
+  {"fieldname": "role_weight", "fieldtype": "Float", "label": "Role Weight", "default": "0.2"},
+  {"fieldname": "max_matches_per_round", "fieldtype": "Int", "label": "Max Matches Per Round", "default": "5"},
+  {"fieldname": "min_score_threshold", "fieldtype": "Float", "label": "Minimum Score Threshold", "default": "0.2"}
+ ],
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "email": 1, "print": 1, "report": 1, "share": 1},
+  {"role": "All", "read": 1, "write": 1, "create": 1}
+ ],
+ "quick_entry": 1
+}

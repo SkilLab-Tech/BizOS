@@ -1,0 +1,15 @@
+{
+ "doctype": "Workspace",
+ "label": "Networking",
+ "module": "Networking",
+ "icon": "users",
+ "public": 1,
+ "content": "[]",
+ "links": [
+  {"type": "Card Break", "label": "Networking"},
+  {"type": "Link", "label": "Member Profile", "link_type": "DocType", "link_to": "Member Profile"},
+  {"type": "Link", "label": "Matching Preference", "link_type": "DocType", "link_to": "Matching Preference"},
+  {"type": "Link", "label": "Match", "link_type": "DocType", "link_to": "Match"},
+  {"type": "Link", "label": "Meeting", "link_type": "DocType", "link_to": "Meeting"}
+ ]
+}

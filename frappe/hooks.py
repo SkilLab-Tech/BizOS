@@ -202,7 +202,7 @@ scheduler_events = {
 			"frappe.email.doctype.notification.notification.trigger_offset_alerts",
 		],
 		# 15 minutes
-		"0/15 * * * *": [
+        "0/15 * * * *": [
 			"frappe.email.doctype.email_account.email_account.notify_unreplied",
 			"frappe.utils.global_search.sync_global_search",
 			"frappe.deferred_insert.save_to_db",
@@ -210,6 +210,7 @@ scheduler_events = {
 			"frappe.model.utils.link_count.update_link_count",
 			"frappe.search.sqlite_search.build_index_if_not_exists",
 			"frappe.pulse.client.send_queued_events",
+            "frappe.networking.matching.run_periodic_matching",
 		],
 		# 10 minutes
 		"0/10 * * * *": [
