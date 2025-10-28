@@ -1,0 +1,51 @@
+{
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Child",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "day_of_week",
+  "start_time",
+  "end_time",
+  "is_available"
+ ],
+ "fields": [
+  {
+   "fieldname": "day_of_week",
+   "fieldtype": "Select",
+   "label": "Day of Week",
+   "options": "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "is_available",
+   "fieldtype": "Check",
+   "label": "Available",
+   "default": 1
+  }
+ ],
+ "idx": 1,
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Profile Availability",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "day_of_week",
+ "sort_order": "ASC",
+ "states": []
+}

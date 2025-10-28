@@ -1,0 +1,433 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Master",
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_section",
+  "user",
+  "full_name",
+  "email",
+  "phone",
+  "profile_image",
+  "bio",
+  "cb_00",
+  "profile_type",
+  "availability_status",
+  "location",
+  "timezone",
+  "sb_01",
+  "professional_info",
+  "current_organization",
+  "job_title",
+  "industry",
+  "experience_years",
+  "education_level",
+  "cb_01",
+  "skills",
+  "interests",
+  "languages",
+  "sb_02",
+  "networking_preferences",
+  "looking_for",
+  "can_mentor",
+  "seeking_mentor",
+  "open_to_jobs",
+  "open_to_projects",
+  "cb_02",
+  "meeting_preferences",
+  "preferred_meeting_type",
+  "availability_schedule",
+  "sb_03",
+  "social_profiles",
+  "linkedin_profile",
+  "twitter_profile",
+  "github_profile",
+  "portfolio_website",
+  "cb_03",
+  "contact_preferences",
+  "preferred_contact_method",
+  "allow_direct_messages",
+  "sb_04",
+  "verification",
+  "email_verified",
+  "phone_verified",
+  "profile_completed",
+  "last_active",
+  "sb_05",
+  "privacy_settings",
+  "profile_visibility",
+  "show_contact_info",
+  "show_social_profiles"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "Profile Information",
+   "options": "fa fa-user"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "bio",
+   "fieldtype": "Text",
+   "label": "Bio",
+   "options": "Text"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profile_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Profile Type",
+   "options": "Individual\nOrganization\nBoth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "availability_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Availability Status",
+   "options": "Available\nBusy\nAway\nDo Not Disturb",
+   "default": "Available"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "timezone",
+   "fieldtype": "Data",
+   "label": "Timezone"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Professional Information",
+   "options": "fa fa-briefcase"
+  },
+  {
+   "fieldname": "current_organization",
+   "fieldtype": "Link",
+   "label": "Current Organization",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry"
+  },
+  {
+   "fieldname": "experience_years",
+   "fieldtype": "Int",
+   "label": "Years of Experience"
+  },
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Select",
+   "label": "Education Level",
+   "options": "High School\nAssociate Degree\nBachelor's Degree\nMaster's Degree\nDoctorate\nProfessional Degree\nOther"
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table",
+   "label": "Skills",
+   "options": "Profile Skill"
+  },
+  {
+   "fieldname": "interests",
+   "fieldtype": "Table",
+   "label": "Interests",
+   "options": "Profile Interest"
+  },
+  {
+   "fieldname": "languages",
+   "fieldtype": "Table",
+   "label": "Languages",
+   "options": "Profile Language"
+  },
+  {
+   "fieldname": "sb_02",
+   "fieldtype": "Section Break",
+   "label": "Networking Preferences",
+   "options": "fa fa-users"
+  },
+  {
+   "fieldname": "looking_for",
+   "fieldtype": "Table",
+   "label": "Looking For",
+   "options": "Profile Looking For"
+  },
+  {
+   "fieldname": "can_mentor",
+   "fieldtype": "Check",
+   "label": "Can Mentor Others"
+  },
+  {
+   "fieldname": "seeking_mentor",
+   "fieldtype": "Check",
+   "label": "Seeking Mentor"
+  },
+  {
+   "fieldname": "open_to_jobs",
+   "fieldtype": "Check",
+   "label": "Open to Job Opportunities"
+  },
+  {
+   "fieldname": "open_to_projects",
+   "fieldtype": "Check",
+   "label": "Open to Project Collaborations"
+  },
+  {
+   "fieldname": "cb_02",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_preferences",
+   "fieldtype": "Section Break",
+   "label": "Meeting Preferences",
+   "options": "fa fa-calendar"
+  },
+  {
+   "fieldname": "preferred_meeting_type",
+   "fieldtype": "Select",
+   "label": "Preferred Meeting Type",
+   "options": "In-Person\nVideo Call\nPhone Call\nAny"
+  },
+  {
+   "fieldname": "availability_schedule",
+   "fieldtype": "Table",
+   "label": "Availability Schedule",
+   "options": "Profile Availability"
+  },
+  {
+   "fieldname": "sb_03",
+   "fieldtype": "Section Break",
+   "label": "Social Profiles",
+   "options": "fa fa-share-alt"
+  },
+  {
+   "fieldname": "linkedin_profile",
+   "fieldtype": "Data",
+   "label": "LinkedIn Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "twitter_profile",
+   "fieldtype": "Data",
+   "label": "Twitter Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "github_profile",
+   "fieldtype": "Data",
+   "label": "GitHub Profile",
+   "options": "URL"
+  },
+  {
+   "fieldname": "portfolio_website",
+   "fieldtype": "Data",
+   "label": "Portfolio Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "cb_03",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_preferences",
+   "fieldtype": "Section Break",
+   "label": "Contact Preferences",
+   "options": "fa fa-envelope"
+  },
+  {
+   "fieldname": "preferred_contact_method",
+   "fieldtype": "Select",
+   "label": "Preferred Contact Method",
+   "options": "Email\nPhone\nLinkedIn\nTwitter\nOther"
+  },
+  {
+   "fieldname": "allow_direct_messages",
+   "fieldtype": "Check",
+   "label": "Allow Direct Messages"
+  },
+  {
+   "fieldname": "sb_04",
+   "fieldtype": "Section Break",
+   "label": "Verification & Status",
+   "options": "fa fa-check-circle"
+  },
+  {
+   "fieldname": "email_verified",
+   "fieldtype": "Check",
+   "label": "Email Verified"
+  },
+  {
+   "fieldname": "phone_verified",
+   "fieldtype": "Check",
+   "label": "Phone Verified"
+  },
+  {
+   "fieldname": "profile_completed",
+   "fieldtype": "Check",
+   "label": "Profile Completed"
+  },
+  {
+   "fieldname": "last_active",
+   "fieldtype": "Datetime",
+   "label": "Last Active",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_05",
+   "fieldtype": "Section Break",
+   "label": "Privacy Settings",
+   "options": "fa fa-shield-alt"
+  },
+  {
+   "fieldname": "profile_visibility",
+   "fieldtype": "Select",
+   "label": "Profile Visibility",
+   "options": "Public\nConnections Only\nPrivate",
+   "default": "Public"
+  },
+  {
+   "fieldname": "show_contact_info",
+   "fieldtype": "Check",
+   "label": "Show Contact Information"
+  },
+  {
+   "fieldname": "show_social_profiles",
+   "fieldtype": "Check",
+   "label": "Show Social Profiles"
+  }
+ ],
+ "icon": "fa fa-user",
+ "idx": 1,
+ "image_field": "profile_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Profile",
+ "name_case": "Title Case",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

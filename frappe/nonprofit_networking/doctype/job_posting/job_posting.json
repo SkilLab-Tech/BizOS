@@ -1,0 +1,330 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Transaction",
+ "engine": "InnoDB",
+ "field_order": [
+  "job_section",
+  "title",
+  "organization",
+  "job_type",
+  "employment_type",
+  "location",
+  "remote_work",
+  "cb_00",
+  "status",
+  "priority",
+  "posted_date",
+  "application_deadline",
+  "sb_01",
+  "job_details",
+  "description",
+  "requirements",
+  "responsibilities",
+  "benefits",
+  "cb_01",
+  "compensation",
+  "salary_range",
+  "currency",
+  "experience_level",
+  "education_required",
+  "sb_02",
+  "skills_requirements",
+  "required_skills",
+  "preferred_skills",
+  "languages_required",
+  "cb_02",
+  "application_info",
+  "application_method",
+  "contact_email",
+  "application_url",
+  "sb_03",
+  "statistics",
+  "total_applications",
+  "view_count",
+  "featured"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_section",
+   "fieldtype": "Section Break",
+   "label": "Job Information",
+   "options": "fa fa-briefcase"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Job Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Organization",
+   "options": "Organization",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "label": "Job Type",
+   "options": "Full-time\nPart-time\nContract\nInternship\nVolunteer\nFreelance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Select",
+   "label": "Employment Type",
+   "options": "Permanent\nTemporary\nProject-based\nSeasonal"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "remote_work",
+   "fieldtype": "Select",
+   "label": "Remote Work",
+   "options": "No\nYes\nHybrid"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nOpen\nClosed\nFilled\nCancelled",
+   "default": "Draft"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh\nUrgent",
+   "default": "Medium"
+  },
+  {
+   "fieldname": "posted_date",
+   "fieldtype": "Date",
+   "label": "Posted Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "application_deadline",
+   "fieldtype": "Date",
+   "label": "Application Deadline"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Job Details",
+   "options": "fa fa-info-circle"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Job Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Text",
+   "label": "Requirements"
+  },
+  {
+   "fieldname": "responsibilities",
+   "fieldtype": "Text",
+   "label": "Responsibilities"
+  },
+  {
+   "fieldname": "benefits",
+   "fieldtype": "Text",
+   "label": "Benefits"
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "compensation",
+   "fieldtype": "Section Break",
+   "label": "Compensation",
+   "options": "fa fa-dollar-sign"
+  },
+  {
+   "fieldname": "salary_range",
+   "fieldtype": "Data",
+   "label": "Salary Range"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "experience_level",
+   "fieldtype": "Select",
+   "label": "Experience Level",
+   "options": "Entry Level\nMid Level\nSenior Level\nExecutive Level"
+  },
+  {
+   "fieldname": "education_required",
+   "fieldtype": "Select",
+   "label": "Education Required",
+   "options": "High School\nAssociate Degree\nBachelor's Degree\nMaster's Degree\nDoctorate\nNo Requirement"
+  },
+  {
+   "fieldname": "sb_02",
+   "fieldtype": "Section Break",
+   "label": "Skills & Requirements",
+   "options": "fa fa-tasks"
+  },
+  {
+   "fieldname": "required_skills",
+   "fieldtype": "Small Text",
+   "label": "Required Skills"
+  },
+  {
+   "fieldname": "preferred_skills",
+   "fieldtype": "Small Text",
+   "label": "Preferred Skills"
+  },
+  {
+   "fieldname": "languages_required",
+   "fieldtype": "Small Text",
+   "label": "Languages Required"
+  },
+  {
+   "fieldname": "cb_02",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "application_info",
+   "fieldtype": "Section Break",
+   "label": "Application Information",
+   "options": "fa fa-envelope"
+  },
+  {
+   "fieldname": "application_method",
+   "fieldtype": "Select",
+   "label": "Application Method",
+   "options": "Email\nWebsite\nLinkedIn\nOther",
+   "default": "Email"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "application_url",
+   "fieldtype": "Data",
+   "label": "Application URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "sb_03",
+   "fieldtype": "Section Break",
+   "label": "Statistics",
+   "options": "fa fa-chart-bar"
+  },
+  {
+   "fieldname": "total_applications",
+   "fieldtype": "Int",
+   "label": "Total Applications",
+   "read_only": 1
+  },
+  {
+   "fieldname": "view_count",
+   "fieldtype": "Int",
+   "label": "View Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "featured",
+   "fieldtype": "Check",
+   "label": "Featured Job"
+  }
+ ],
+ "icon": "fa fa-briefcase",
+ "idx": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Job Posting",
+ "name_case": "Title Case",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "posted_date",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

@@ -1,0 +1,273 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Transaction",
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_section",
+  "from_profile",
+  "to_profile",
+  "meeting_purpose",
+  "meeting_type",
+  "proposed_date",
+  "proposed_time",
+  "duration",
+  "location",
+  "meeting_link",
+  "cb_00",
+  "status",
+  "priority",
+  "is_ai_suggested",
+  "match_score",
+  "sb_01",
+  "message",
+  "additional_notes",
+  "sb_02",
+  "response",
+  "response_message",
+  "response_date",
+  "sb_03",
+  "meeting_details",
+  "confirmed_date",
+  "confirmed_time",
+  "confirmed_location",
+  "confirmed_meeting_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Request",
+   "options": "fa fa-calendar-plus"
+  },
+  {
+   "fieldname": "from_profile",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "From Profile",
+   "options": "Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_profile",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "To Profile",
+   "options": "Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_purpose",
+   "fieldtype": "Select",
+   "label": "Meeting Purpose",
+   "options": "Networking\nMentorship\nJob Discussion\nProject Collaboration\nGeneral Discussion\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Select",
+   "label": "Meeting Type",
+   "options": "In-Person\nVideo Call\nPhone Call",
+   "reqd": 1
+  },
+  {
+   "fieldname": "proposed_date",
+   "fieldtype": "Date",
+   "label": "Proposed Date"
+  },
+  {
+   "fieldname": "proposed_time",
+   "fieldtype": "Time",
+   "label": "Proposed Time"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Select",
+   "label": "Duration",
+   "options": "15 minutes\n30 minutes\n45 minutes\n1 hour\n1.5 hours\n2 hours",
+   "default": "30 minutes"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "meeting_link",
+   "fieldtype": "Data",
+   "label": "Meeting Link",
+   "options": "URL"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nAccepted\nRejected\nCancelled\nCompleted",
+   "default": "Pending"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh",
+   "default": "Medium"
+  },
+  {
+   "fieldname": "is_ai_suggested",
+   "fieldtype": "Check",
+   "label": "AI Suggested"
+  },
+  {
+   "fieldname": "match_score",
+   "fieldtype": "Percent",
+   "label": "Match Score"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Message",
+   "options": "fa fa-comment"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text",
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "sb_02",
+   "fieldtype": "Section Break",
+   "label": "Response",
+   "options": "fa fa-reply"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Select",
+   "label": "Response",
+   "options": "Pending\nAccepted\nRejected\nCounter Proposal"
+  },
+  {
+   "fieldname": "response_message",
+   "fieldtype": "Text",
+   "label": "Response Message"
+  },
+  {
+   "fieldname": "response_date",
+   "fieldtype": "Datetime",
+   "label": "Response Date"
+  },
+  {
+   "fieldname": "sb_03",
+   "fieldtype": "Section Break",
+   "label": "Meeting Details",
+   "options": "fa fa-calendar-check"
+  },
+  {
+   "fieldname": "confirmed_date",
+   "fieldtype": "Date",
+   "label": "Confirmed Date"
+  },
+  {
+   "fieldname": "confirmed_time",
+   "fieldtype": "Time",
+   "label": "Confirmed Time"
+  },
+  {
+   "fieldname": "confirmed_location",
+   "fieldtype": "Data",
+   "label": "Confirmed Location"
+  },
+  {
+   "fieldname": "confirmed_meeting_link",
+   "fieldtype": "Data",
+   "label": "Confirmed Meeting Link",
+   "options": "URL"
+  }
+ ],
+ "icon": "fa fa-calendar-plus",
+ "idx": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Meeting Request",
+ "name_case": "Title Case",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "meeting_purpose"
+}

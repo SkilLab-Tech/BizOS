@@ -1,0 +1,45 @@
+{
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Child",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "interest",
+  "interest_level",
+  "is_primary"
+ ],
+ "fields": [
+  {
+   "fieldname": "interest",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Interest",
+   "options": "Interest",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interest_level",
+   "fieldtype": "Select",
+   "label": "Interest Level",
+   "options": "Low\nMedium\nHigh",
+   "reqd": 1
+  },
+  {
+   "fieldname": "is_primary",
+   "fieldtype": "Check",
+   "label": "Primary Interest"
+  }
+ ],
+ "idx": 1,
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Profile Interest",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "interest",
+ "sort_order": "ASC",
+ "states": []
+}

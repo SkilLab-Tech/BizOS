@@ -1,0 +1,298 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Transaction",
+ "engine": "InnoDB",
+ "field_order": [
+  "mentorship_section",
+  "mentor",
+  "mentee",
+  "mentorship_type",
+  "status",
+  "start_date",
+  "end_date",
+  "cb_00",
+  "mentorship_area",
+  "goals",
+  "frequency",
+  "meeting_duration",
+  "sb_01",
+  "mentorship_details",
+  "description",
+  "expectations",
+  "mentor_commitments",
+  "mentee_commitments",
+  "cb_01",
+  "progress_tracking",
+  "current_phase",
+  "milestones",
+  "achievements",
+  "sb_02",
+  "feedback",
+  "mentor_feedback",
+  "mentee_feedback",
+  "overall_rating",
+  "recommendations",
+  "sb_03",
+  "meetings",
+  "total_meetings",
+  "completed_meetings",
+  "upcoming_meetings"
+ ],
+ "fields": [
+  {
+   "fieldname": "mentorship_section",
+   "fieldtype": "Section Break",
+   "label": "Mentorship Information",
+   "options": "fa fa-graduation-cap"
+  },
+  {
+   "fieldname": "mentor",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Mentor",
+   "options": "Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mentee",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Mentee",
+   "options": "Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mentorship_type",
+   "fieldtype": "Select",
+   "label": "Mentorship Type",
+   "options": "Career Guidance\nSkill Development\nLeadership Development\nIndustry Insights\nProject Guidance\nGeneral Mentoring",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nActive\nPaused\nCompleted\nCancelled",
+   "default": "Pending"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mentorship_area",
+   "fieldtype": "Link",
+   "label": "Mentorship Area",
+   "options": "Skill"
+  },
+  {
+   "fieldname": "goals",
+   "fieldtype": "Text",
+   "label": "Goals"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Meeting Frequency",
+   "options": "Weekly\nBi-weekly\nMonthly\nQuarterly\nAs Needed"
+  },
+  {
+   "fieldname": "meeting_duration",
+   "fieldtype": "Select",
+   "label": "Meeting Duration",
+   "options": "30 minutes\n45 minutes\n1 hour\n1.5 hours\n2 hours"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Mentorship Details",
+   "options": "fa fa-info-circle"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "expectations",
+   "fieldtype": "Text",
+   "label": "Expectations"
+  },
+  {
+   "fieldname": "mentor_commitments",
+   "fieldtype": "Text",
+   "label": "Mentor Commitments"
+  },
+  {
+   "fieldname": "mentee_commitments",
+   "fieldtype": "Text",
+   "label": "Mentee Commitments"
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "progress_tracking",
+   "fieldtype": "Section Break",
+   "label": "Progress Tracking",
+   "options": "fa fa-chart-line"
+  },
+  {
+   "fieldname": "current_phase",
+   "fieldtype": "Select",
+   "label": "Current Phase",
+   "options": "Initial\nPlanning\nActive Mentoring\nReview\nCompletion"
+  },
+  {
+   "fieldname": "milestones",
+   "fieldtype": "Table",
+   "label": "Milestones",
+   "options": "Mentorship Milestone"
+  },
+  {
+   "fieldname": "achievements",
+   "fieldtype": "Text",
+   "label": "Key Achievements"
+  },
+  {
+   "fieldname": "sb_02",
+   "fieldtype": "Section Break",
+   "label": "Feedback",
+   "options": "fa fa-comments"
+  },
+  {
+   "fieldname": "mentor_feedback",
+   "fieldtype": "Text",
+   "label": "Mentor Feedback"
+  },
+  {
+   "fieldname": "mentee_feedback",
+   "fieldtype": "Text",
+   "label": "Mentee Feedback"
+  },
+  {
+   "fieldname": "overall_rating",
+   "fieldtype": "Select",
+   "label": "Overall Rating",
+   "options": "1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "sb_03",
+   "fieldtype": "Section Break",
+   "label": "Meetings",
+   "options": "fa fa-calendar"
+  },
+  {
+   "fieldname": "total_meetings",
+   "fieldtype": "Int",
+   "label": "Total Meetings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "completed_meetings",
+   "fieldtype": "Int",
+   "label": "Completed Meetings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "upcoming_meetings",
+   "fieldtype": "Int",
+   "label": "Upcoming Meetings",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-graduation-cap",
+ "idx": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Mentorship",
+ "name_case": "Title Case",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "mentorship_type"
+}

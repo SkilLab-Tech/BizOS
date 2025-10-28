@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-01-01 00:00:00",
+ "doctype": "DocType",
+ "document_type": "Transaction",
+ "engine": "InnoDB",
+ "field_order": [
+  "application_section",
+  "job_posting",
+  "profile",
+  "status",
+  "application_date",
+  "cb_00",
+  "cover_letter",
+  "resume",
+  "expected_salary",
+  "availability_date",
+  "sb_01",
+  "application_details",
+  "motivation",
+  "relevant_experience",
+  "additional_skills",
+  "cb_01",
+  "review_info",
+  "reviewer_notes",
+  "interview_scheduled",
+  "interview_date",
+  "interview_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "application_section",
+   "fieldtype": "Section Break",
+   "label": "Application Information",
+   "options": "fa fa-file-alt"
+  },
+  {
+   "fieldname": "job_posting",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Job Posting",
+   "options": "Job Posting",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Profile",
+   "options": "Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Applied\nUnder Review\nShortlisted\nInterviewed\nRejected\nAccepted\nWithdrawn",
+   "default": "Applied"
+  },
+  {
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cover_letter",
+   "fieldtype": "Attach",
+   "label": "Cover Letter"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Resume"
+  },
+  {
+   "fieldname": "expected_salary",
+   "fieldtype": "Data",
+   "label": "Expected Salary"
+  },
+  {
+   "fieldname": "availability_date",
+   "fieldtype": "Date",
+   "label": "Availability Date"
+  },
+  {
+   "fieldname": "sb_01",
+   "fieldtype": "Section Break",
+   "label": "Application Details",
+   "options": "fa fa-info-circle"
+  },
+  {
+   "fieldname": "motivation",
+   "fieldtype": "Text",
+   "label": "Motivation"
+  },
+  {
+   "fieldname": "relevant_experience",
+   "fieldtype": "Text",
+   "label": "Relevant Experience"
+  },
+  {
+   "fieldname": "additional_skills",
+   "fieldtype": "Text",
+   "label": "Additional Skills"
+  },
+  {
+   "fieldname": "cb_01",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "review_info",
+   "fieldtype": "Section Break",
+   "label": "Review Information",
+   "options": "fa fa-eye"
+  },
+  {
+   "fieldname": "reviewer_notes",
+   "fieldtype": "Text",
+   "label": "Reviewer Notes"
+  },
+  {
+   "fieldname": "interview_scheduled",
+   "fieldtype": "Check",
+   "label": "Interview Scheduled"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Datetime",
+   "label": "Interview Date"
+  },
+  {
+   "fieldname": "interview_notes",
+   "fieldtype": "Text",
+   "label": "Interview Notes"
+  }
+ ],
+ "icon": "fa fa-file-alt",
+ "idx": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00",
+ "modified_by": "Administrator",
+ "module": "Nonprofit Networking",
+ "name": "Job Application",
+ "name_case": "Title Case",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Networking Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "role": "Networking User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "if_owner": 1,
+   "read": 1,
+   "role": "All",
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "application_date",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "job_posting"
+}
